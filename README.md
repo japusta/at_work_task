@@ -196,11 +196,10 @@ function isPalindrome(str) {
     const reversed = cleaned.split('').reverse().join('');
     return cleaned === reversed;
 }
-```
 // Примеры использования
 console.log(isPalindrome("Кони, топот, инок")); // Output: true
 console.log(isPalindrome("Hello World"));                 // Output: false
-
+```
 
 4. Кратко расскажите о вашем опыте в IT и поделитесь ссылкой на проекты на
 GitHub, если они у вас есть.
