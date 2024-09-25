@@ -9,6 +9,7 @@
 Полиморфизм позволяет использовать объекты разных классов через общий интерфейс, вызывая их методы по-разному.
 
 Инкапсуляция:
+```
 #include <iostream>
 #include <string>
 class Phone {
@@ -40,8 +41,9 @@ int main() {
     std::cout << "Battery Level after charging: " << myPhone.getBatteryLevel() << "%" << std::endl; // Вывод: 80%
     return 0;
 }
-
+```
 Наследование.
+```
 #include <iostream>
 #include <string>
 
@@ -97,8 +99,9 @@ int main() {
     mySmartphone.takePhoto();  // Вывод: Photo taken with a 12 MP camera.
     return 0;
 }
-
+```
 Полиморфизм.
+```
 #include <iostream>
 #include <string>
 #include <vector>
@@ -162,7 +165,7 @@ int main() {
     // Plastic Phone - Model: PlasticPhone, Battery Level: 30%
     return 0;
 }
-
+```
 
 
 
@@ -186,14 +189,14 @@ git revert abc1234
 
 3. Напишите функцию на любом языке, которая проверяет, является ли строка
 палиндромом.
-
+```
 function isPalindrome(str) {
     // Удаляем все символы, кроме букв (включая кириллицу) и цифр, приводим к нижнему регистру
     const cleaned = str.replace(/[^A-Za-zА-Яа-я0-9]/g, '').toLowerCase();
     const reversed = cleaned.split('').reverse().join('');
     return cleaned === reversed;
 }
-
+```
 // Примеры использования
 console.log(isPalindrome("Кони, топот, инок")); // Output: true
 console.log(isPalindrome("Hello World"));                 // Output: false
